@@ -128,10 +128,34 @@ render view - every frame&#x20;
 
 on ragebot shot
 
+🔗 struct <mark style="color:blue;">**`lua_shot_info`**</mark>
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
 ### on\_hitscan&#x20;
 
 on ragebot hitbox selection
 
+🔗 struct <mark style="color:blue;">**`on_hitscan`**</mark>
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
 ### on\_multipoints&#x20;
 
 on ragebot multipoint setup
+
+🔗 struct <mark style="color:blue;">**`lua_multipoints`**</mark>
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |

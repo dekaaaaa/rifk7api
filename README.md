@@ -37,4 +37,4 @@ For information on how to get started with lua scripting, check out the link bel
 
 ## Documentation errors
 
-This documentation was made by Serein.Fn and Robonyan\_tame. Please report any errors in the documentation either to us in a private message on the forum or to Robonyan\_tame#4147 on Discord.
+Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and Fearless\_hamster, if you have any questions please send an error message to Robonyan\_tame#4147 via discord
