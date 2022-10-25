@@ -1,6 +1,6 @@
 # Events
 
-## List of game events:
+## is\_button\_activeList of game events:
 
 {% embed url="https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events" %}
 Official CS:GO events
@@ -70,19 +70,12 @@ on drawing model&#x20;
 
 #### 🔗 struct <mark style="color:blue;">`lua_dme`</mark>
 
-|   | Type | Description |
-| - | ---- | ----------- |
-|   |      |             |
-|   |      |             |
-|   |      |             |
-
-#### 🔗 struct <mark style="color:blue;">`original`</mark>
-
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                  | Type              | Description |
+| ---------------- | ----------------- | ----------- |
+| get\_entity      | c\_client\_entity |             |
+| get\_model\_name | string            |             |
+| should\_override | bool              |             |
+| get\_matrix      | matrix3x4         |             |
 
 ### on\_drawmodel
 
@@ -90,11 +83,22 @@ start of createmove
 
 #### 🔗 struct <mark style="color:blue;">`c_user_cmd`</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                      | Type                     | Description |
+| -------------------- | ------------------------ | ----------- |
+| get\_command\_number | int                      |             |
+| get\_tick\_count     | int                      |             |
+| get\_viewangles      | c\_vector3d              |             |
+| get\_forwardmove     | float                    |             |
+| get\_sidemove        | float                    |             |
+| get\_upmove          | float                    |             |
+| get\_buttons         | buttons                  |             |
+| add\_button          | function(buttons button) |             |
+| remove\_button       | function(buttons button) |             |
+| is\_button\_active   | function(buttons button) |             |
+| get\_weaponselect    | int                      |             |
+| get\_weaponsubtype   | int                      |             |
+| get\_mousedx         | int                      |             |
+| get\_mousedy         | int                      |             |
 
 ### on\_createmove\_pre\_antiaim
 
@@ -102,11 +106,10 @@ before antiaim
 
 #### 🔗 struct <mark style="color:blue;">`lua_createmove`</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                   |              |   |
+| ----------------- | ------------ | - |
+| cmd               | c\_user\_cmd |   |
+| ragebot\_shooting | bool         |   |
 
 ### on\_override\_view
 
@@ -118,11 +121,12 @@ render view - every frame&#x20;
 
 #### 🔗 struct <mark style="color:blue;">`c_view_setup`</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                     |             |   |
+| ------------------- | ----------- | - |
+| get\_origin         | c\_vector3d |   |
+| get\_angles         | c\_vector3d |   |
+| get\_fov            | float       |   |
+| get\_fov\_viewmodel | float       |   |
 
 ### on\_shot\_info&#x20;
 
@@ -130,23 +134,27 @@ on ragebot shot
 
 🔗 struct <mark style="color:blue;">**`lua_shot_info`**</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                       |             |   |
+| --------------------- | ----------- | - |
+| get\_start            | c\_vector3d |   |
+| get\_end              | c\_vector3d |   |
+| get\_target           | bool        |   |
+| get\_damage           | float       |   |
+| get\_damage\_override | float       |   |
+| get\_backtrack        | int         |   |
+| get\_hitbox           | hitbox      |   |
 
 ### on\_hitscan&#x20;
 
 on ragebot hitbox selection
 
-🔗 struct <mark style="color:blue;">**`on_hitscan`**</mark>
+🔗 struct <mark style="color:blue;">**`lua_hitscan`**</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                  |                   |   |
+| ---------------- | ----------------- | - |
+| get\_player      | c\_client\_entity |   |
+| should\_override | bool              |   |
+|                  |                   |   |
 
 ### on\_multipoints&#x20;
 
@@ -154,8 +162,9 @@ on ragebot multipoint setup
 
 🔗 struct <mark style="color:blue;">**`lua_multipoints`**</mark>
 
-|   |   |   |
-| - | - | - |
-|   |   |   |
-|   |   |   |
-|   |   |   |
+|                            |                   |   |
+| -------------------------- | ----------------- | - |
+| get\_player                | c\_client\_entity |   |
+| hitbox                     | hitbox            |   |
+| should\_multipoint\_hitbox | bool              |   |
+| should\_override           | bool              |   |
