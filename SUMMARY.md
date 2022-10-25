@@ -14,4 +14,8 @@
 * [Class](documentation/class/README.md)
   * [Page 3](documentation/class/page-3.md)
 * [Variables](documentation/variables/README.md)
+  * [❄ general](documentation/variables/general.md)
   * [💻 menu](documentation/variables/menu.md)
+  * [📃 filesystem](documentation/variables/filesystem.md)
+  * [💣 debug\_overlay](documentation/variables/debug\_overlay.md)
+  * [📽 netchannel](documentation/variables/netchannel.md)

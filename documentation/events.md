@@ -124,10 +124,14 @@ render view - every frame&#x20;
 |   |   |   |
 |   |   |   |
 
+### on\_shot\_info&#x20;
 
+on ragebot shot
 
-< lua\_shot\_info > on\_shot\_info - createmove - on ragebot shot&#x20;
+### on\_hitscan&#x20;
 
-< lua\_hitscan > on\_hitscan - createmove - on ragebot hitbox selection&#x20;
+on ragebot hitbox selection
 
-< lua\_multipoints > on\_multipoints - createmove - on ragebot multipoint setup
+### on\_multipoints&#x20;
+
+on ragebot multipoint setup
