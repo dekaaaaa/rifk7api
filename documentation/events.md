@@ -70,12 +70,12 @@ on drawing model&#x20;
 
 #### 🔗 struct <mark style="color:blue;">`lua_dme`</mark>
 
-|                  | Type              | Description |
-| ---------------- | ----------------- | ----------- |
-| get\_entity      | c\_client\_entity |             |
-| get\_model\_name | string            |             |
-| should\_override | bool              |             |
-| get\_matrix      | matrix3x4         |             |
+|                  | Type                                            | Description |
+| ---------------- | ----------------------------------------------- | ----------- |
+| get\_entity      | [c\_client\_entity](class/c\_client\_entity.md) |             |
+| get\_model\_name | string                                          |             |
+| should\_override | bool                                            |             |
+| get\_matrix      | [matrix3x4](class/c\_matrix3x4.md)              |             |
 
 ### on\_createmove
 
@@ -83,22 +83,22 @@ start of createmove
 
 #### 🔗 struct <mark style="color:blue;">`c_user_cmd`</mark>
 
-|                      | Type                     | Description |
-| -------------------- | ------------------------ | ----------- |
-| get\_command\_number | int                      |             |
-| get\_tick\_count     | int                      |             |
-| get\_viewangles      | c\_vector3d              |             |
-| get\_forwardmove     | float                    |             |
-| get\_sidemove        | float                    |             |
-| get\_upmove          | float                    |             |
-| get\_buttons         | buttons                  |             |
-| add\_button          | function(buttons button) |             |
-| remove\_button       | function(buttons button) |             |
-| is\_button\_active   | function(buttons button) |             |
-| get\_weaponselect    | int                      |             |
-| get\_weaponsubtype   | int                      |             |
-| get\_mousedx         | int                      |             |
-| get\_mousedy         | int                      |             |
+|                      | Type                                                   | Description |
+| -------------------- | ------------------------------------------------------ | ----------- |
+| get\_command\_number | int                                                    |             |
+| get\_tick\_count     | int                                                    |             |
+| get\_viewangles      | [c\_vector3d](class/c\_vector3d.md)                    |             |
+| get\_forwardmove     | float                                                  |             |
+| get\_sidemove        | float                                                  |             |
+| get\_upmove          | float                                                  |             |
+| get\_buttons         | buttons                                                |             |
+| add\_button          | function([buttons](enumerations/e\_buttons.md) button) |             |
+| remove\_button       | function([buttons](enumerations/e\_buttons.md) button) |             |
+| is\_button\_active   | function([buttons](enumerations/e\_buttons.md) button) |             |
+| get\_weaponselect    | int                                                    |             |
+| get\_weaponsubtype   | int                                                    |             |
+| get\_mousedx         | int                                                    |             |
+| get\_mousedy         | int                                                    |             |
 
 ### on\_createmove\_pre\_antiaim
 
@@ -106,10 +106,10 @@ before antiaim
 
 #### 🔗 struct <mark style="color:blue;">`lua_createmove`</mark>
 
-|                   | Type         | Description |
-| ----------------- | ------------ | ----------- |
-| cmd               | c\_user\_cmd |             |
-| ragebot\_shooting | bool         |             |
+|                   | Type                                          | Description |
+| ----------------- | --------------------------------------------- | ----------- |
+| cmd               | [c\_user\_cmd](events.md#struct-c\_user\_cmd) |             |
+| ragebot\_shooting | bool                                          |             |
 
 ### on\_override\_view
 
@@ -121,12 +121,12 @@ render view - every frame&#x20;
 
 #### 🔗 struct <mark style="color:blue;">`c_view_setup`</mark>
 
-|                     | Type        | Description |
-| ------------------- | ----------- | ----------- |
-| get\_origin         | c\_vector3d |             |
-| get\_angles         | c\_vector3d |             |
-| get\_fov            | float       |             |
-| get\_fov\_viewmodel | float       |             |
+|                     | Type                                | Description |
+| ------------------- | ----------------------------------- | ----------- |
+| get\_origin         | [c\_vector3d](class/c\_vector3d.md) |             |
+| get\_angles         | [c\_vector3d](class/c\_vector3d.md) |             |
+| get\_fov            | float                               |             |
+| get\_fov\_viewmodel | float                               |             |
 
 ### on\_shot\_info&#x20;
 
@@ -134,15 +134,15 @@ on ragebot shot
 
 🔗 struct <mark style="color:blue;">**`lua_shot_info`**</mark>
 
-|                       | Type        | Description |
-| --------------------- | ----------- | ----------- |
-| get\_start            | c\_vector3d |             |
-| get\_end              | c\_vector3d |             |
-| get\_target           | bool        |             |
-| get\_damage           | float       |             |
-| get\_damage\_override | float       |             |
-| get\_backtrack        | int         |             |
-| get\_hitbox           | hitbox      |             |
+|                       | Type                                | Description |
+| --------------------- | ----------------------------------- | ----------- |
+| get\_start            | [c\_vector3d](class/c\_vector3d.md) |             |
+| get\_end              | [c\_vector3d](class/c\_vector3d.md) |             |
+| get\_target           | bool                                |             |
+| get\_damage           | float                               |             |
+| get\_damage\_override | float                               |             |
+| get\_backtrack        | int                                 |             |
+| get\_hitbox           | [hitbox](enumerations/e\_hitbox.md) |             |
 
 ### on\_hitscan&#x20;
 
@@ -150,11 +150,10 @@ on ragebot hitbox selection
 
 🔗 struct <mark style="color:blue;">**`lua_hitscan`**</mark>
 
-|                  | Type              | Description |
-| ---------------- | ----------------- | ----------- |
-| get\_player      | c\_client\_entity |             |
-| should\_override | bool              |             |
-|                  |                   |             |
+|                  | Type                                            | Description |
+| ---------------- | ----------------------------------------------- | ----------- |
+| get\_player      | [c\_client\_entity](class/c\_client\_entity.md) |             |
+| should\_override | bool                                            |             |
 
 ### on\_multipoints&#x20;
 
@@ -162,9 +161,9 @@ on ragebot multipoint setup
 
 🔗 struct <mark style="color:blue;">**`lua_multipoints`**</mark>
 
-|                            | Type              | Description |
-| -------------------------- | ----------------- | ----------- |
-| get\_player                | c\_client\_entity |             |
-| hitbox                     | hitbox            |             |
-| should\_multipoint\_hitbox | bool              |             |
-| should\_override           | bool              |             |
+|                            | Type                                            | Description |
+| -------------------------- | ----------------------------------------------- | ----------- |
+| get\_player                | [c\_client\_entity](class/c\_client\_entity.md) |             |
+| hitbox                     | [hitbox](enumerations/e\_hitbox.md)             |             |
+| should\_multipoint\_hitbox | bool                                            |             |
+| should\_override           | bool                                            |             |

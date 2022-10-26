@@ -48,7 +48,7 @@
 
 ### play\_sound
 
-`general.play_sound(sounds sound, volume)` <mark style="color:purple;">`void`</mark>
+`general.play_sound(`[`sounds`](../enumerations/e\_sounds.md) `sound, volume)` <mark style="color:purple;">`void`</mark>
 
 | Name   | Type  |
 | ------ | ----- |

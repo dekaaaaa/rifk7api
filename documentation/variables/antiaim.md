@@ -16,7 +16,7 @@
 
 ### get\_manual\_direction
 
-`antiaim.get_manual_direction():` <mark style="color:purple;">`manual_direction`</mark>
+`antiaim.get_manual_direction():` [<mark style="color:purple;">`manual_direction`</mark>](../enumerations/e\_manual\_direction.md)<mark style="color:purple;">``</mark>
 
 ### did\_send\_packet\_last\_tick
 
