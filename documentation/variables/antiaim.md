@@ -38,7 +38,7 @@ If the value is 0, then he will cancel the override
 
 `antiaim.override_desync(angle):` <mark style="color:purple;">`void`</mark>
 
-Override desync yaw
+Override Desync limit
 
 If the value is 0, then he will cancel the override
 
@@ -50,7 +50,7 @@ If the value is 0, then he will cancel the override
 
 `antiaim.override_pitch(angle):` <mark style="color:purple;">`void`</mark>
 
-Override pitch
+Override Pitch
 
 If the value is 0, then he will cancel the override
 
@@ -62,7 +62,7 @@ If the value is 0, then he will cancel the override
 
 `antiaim.override_roll(angle):` <mark style="color:purple;">`void`</mark>
 
-Override roll, Need to enable "enable lean"
+Override Roll, Need to enable "enable lean"
 
 If the value is 0, then he will cancel the override
 

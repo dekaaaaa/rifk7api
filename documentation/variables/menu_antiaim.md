@@ -55,7 +55,8 @@ menu\_antiaim.set\_fake\_mode(2)  --for setting the fake mode to 2
 * get\_on\_moving
 * get\_max\_fov&#x20;
 * get\_high\_velocity\_lean
-* get\_lby get\_air\_lean
+* get\_lby
+* get\_air\_lean
 * get\_invert\_on\_shot
 * get\_air\_mode&#x20;
 * get\_slow\_fake\_flick
