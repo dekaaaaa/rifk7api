@@ -25,7 +25,7 @@
   * [👩👧👦 c\_base\_entity](documentation/class/c\_base\_entity.md)
   * [🏸 c\_cs\_player](documentation/class/c\_cs\_player.md)
   * [🛡 c\_base\_attributable\_item](documentation/class/c\_base\_attributable\_item.md)
-  * [📇 c\_convar](documentation/class/c\_convar.md)
+  * [📇 convar](documentation/class/convar.md)
   * [🤷♀ c\_base\_combat\_weapon](documentation/class/c\_base\_combat\_weapon.md)
   * [🖥 c\_material](documentation/class/c\_material.md)
   * [☺ c\_material\_var](documentation/class/c\_material\_var.md)
