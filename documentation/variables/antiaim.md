@@ -26,6 +26,10 @@
 
 `antiaim.override_fake(angle):` <mark style="color:purple;">`void`</mark>
 
+Override fake yaw
+
+If the value is 0, then he will cancel the override
+
 | Name  | Type  |
 | ----- | ----- |
 | angle | float |
@@ -33,6 +37,10 @@
 ### override\_desync
 
 `antiaim.override_desync(angle):` <mark style="color:purple;">`void`</mark>
+
+Override Desync limit
+
+If the value is 0, then he will cancel the override
 
 | Name  | Type  |
 | ----- | ----- |
@@ -42,6 +50,10 @@
 
 `antiaim.override_pitch(angle):` <mark style="color:purple;">`void`</mark>
 
+Override Pitch
+
+If the value is 0, then he will cancel the override
+
 | Name  | Type  |
 | ----- | ----- |
 | angle | float |
@@ -49,6 +61,10 @@
 ### override\_roll
 
 `antiaim.override_roll(angle):` <mark style="color:purple;">`void`</mark>
+
+Override Roll, Need to enable "enable lean"
+
+If the value is 0, then he will cancel the override
 
 | Name  | Type  |
 | ----- | ----- |
