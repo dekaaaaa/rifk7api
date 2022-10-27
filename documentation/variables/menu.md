@@ -110,10 +110,6 @@ menu.add\_combo("Example Combo", 0,"First Value\0Second Value\0Third Value\0\0")
 
 `menu.set_combo(std::string name, int):` <mark style="color:purple;">`void`</mark>
 
-{% embed url="https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes" %}
-Keybinds key code
-{% endembed %}
-
 ### add\_keybind
 
 `menu.add_keybind(std::string name, default_button, mode, keybind_options):` <mark style="color:purple;">`void`</mark>
