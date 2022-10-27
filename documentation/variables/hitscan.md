@@ -6,17 +6,17 @@
 
 `hitscan.add_hitbox(hitbox):` <mark style="color:purple;">`void`</mark>
 
-| Name   | Type                                   |
-| ------ | -------------------------------------- |
-| hitbox | [hitbox](../enumerations/e\_hitbox.md) |
+| Name   | Type                                |
+| ------ | ----------------------------------- |
+| hitbox | [hitbox](../enumerations/hitbox.md) |
 
 ### remove\_hitbox
 
 `hitscan.remove_hitbox(hitbox):` <mark style="color:purple;">`void`</mark>
 
-| Name   | Type                                   |
-| ------ | -------------------------------------- |
-| hitbox | [hitbox](../enumerations/e\_hitbox.md) |
+| Name   | Type                                |
+| ------ | ----------------------------------- |
+| hitbox | [hitbox](../enumerations/hitbox.md) |
 
 ### clear
 

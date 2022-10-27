@@ -3,7 +3,7 @@
 |                           | Function Parameter                                                              | Return Type | Description |
 | ------------------------- | ------------------------------------------------------------------------------- | ----------- | ----------- |
 | get\_name                 | `void`                                                                          | `string`    |             |
-| set\_flag                 | `(`[`material_flags`](../enumerations/e\_material\_flags.md)`, bool)`           | `void`      |             |
+| set\_flag                 | `(`[`material_flags`](../enumerations/material\_flags.md)`, bool)`              | `void`      |             |
 | increment\_referencecount | `void`                                                                          | `void`      |             |
 | refresh                   | `void`                                                                          | `void`      |             |
 | is\_error\_material       | `void`                                                                          | `bool`      |             |

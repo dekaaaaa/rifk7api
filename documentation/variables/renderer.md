@@ -6,10 +6,10 @@
 
 `renderer.draw_text(x,y,std::string text,float_red,float_green,float_blue,float_alpha,flags):` <mark style="color:purple;">`void`</mark>
 
-| Name  | Type                                             |
-| ----- | ------------------------------------------------ |
-| x/y   | float                                            |
-| flags | [font\_flags](../enumerations/e\_font\_flags.md) |
+| Name  | Type                                          |
+| ----- | --------------------------------------------- |
+| x/y   | float                                         |
+| flags | [font\_flags](../enumerations/font\_flags.md) |
 
 ### draw\_text\_clipped
 
@@ -192,10 +192,10 @@
 
 `renderer.path_stroke(float_red,float_green,float_blue,float_alpha,flags,thickness):` <mark style="color:purple;">`void`</mark>
 
-| Name      | Type                                             |
-| --------- | ------------------------------------------------ |
-| flags     | [path\_flags](../enumerations/e\_path\_flags.md) |
-| thickness | float                                            |
+| Name      | Type                                          |
+| --------- | --------------------------------------------- |
+| flags     | [path\_flags](../enumerations/path\_flags.md) |
+| thickness | float                                         |
 
 ### path\_arc
 
@@ -240,8 +240,8 @@
 
 `renderer.path_rectangle(x1,y1,x2,y2,rounding,flags):` <mark style="color:purple;">`void`</mark>
 
-| Name     | Type                                             |
-| -------- | ------------------------------------------------ |
-| x/y      | float                                            |
-| rounding | float                                            |
-| flags    | [path\_flags](../enumerations/e\_path\_flags.md) |
+| Name     | Type                                          |
+| -------- | --------------------------------------------- |
+| x/y      | float                                         |
+| rounding | float                                         |
+| flags    | [path\_flags](../enumerations/path\_flags.md) |

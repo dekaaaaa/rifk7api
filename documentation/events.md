@@ -136,22 +136,22 @@ start of createmove
 
 #### 🔗 struct <mark style="color:blue;">`c_user_cmd`</mark>
 
-|                      | Type                                                   | Description |
-| -------------------- | ------------------------------------------------------ | ----------- |
-| get\_command\_number | int                                                    |             |
-| get\_tick\_count     | int                                                    |             |
-| get\_viewangles      | [c\_vector3d](class/c\_vector3d.md)                    |             |
-| get\_forwardmove     | float                                                  |             |
-| get\_sidemove        | float                                                  |             |
-| get\_upmove          | float                                                  |             |
-| get\_buttons         | buttons                                                |             |
-| add\_button          | function([buttons](enumerations/e\_buttons.md) button) |             |
-| remove\_button       | function([buttons](enumerations/e\_buttons.md) button) |             |
-| is\_button\_active   | function([buttons](enumerations/e\_buttons.md) button) |             |
-| get\_weaponselect    | int                                                    |             |
-| get\_weaponsubtype   | int                                                    |             |
-| get\_mousedx         | int                                                    |             |
-| get\_mousedy         | int                                                    |             |
+|                      | Type                                                | Description |
+| -------------------- | --------------------------------------------------- | ----------- |
+| get\_command\_number | int                                                 |             |
+| get\_tick\_count     | int                                                 |             |
+| get\_viewangles      | [c\_vector3d](class/c\_vector3d.md)                 |             |
+| get\_forwardmove     | float                                               |             |
+| get\_sidemove        | float                                               |             |
+| get\_upmove          | float                                               |             |
+| get\_buttons         | buttons                                             |             |
+| add\_button          | function([buttons](enumerations/buttons.md) button) |             |
+| remove\_button       | function([buttons](enumerations/buttons.md) button) |             |
+| is\_button\_active   | function([buttons](enumerations/buttons.md) button) |             |
+| get\_weaponselect    | int                                                 |             |
+| get\_weaponsubtype   | int                                                 |             |
+| get\_mousedx         | int                                                 |             |
+| get\_mousedy         | int                                                 |             |
 
 ### on\_createmove\_pre\_antiaim
 
@@ -195,7 +195,7 @@ on ragebot shot
 | get\_damage           | float                               |             |
 | get\_damage\_override | float                               |             |
 | get\_backtrack        | int                                 |             |
-| get\_hitbox           | [hitbox](enumerations/e\_hitbox.md) |             |
+| get\_hitbox           | [hitbox](enumerations/hitbox.md)    |             |
 
 ### on\_hitscan&#x20;
 
@@ -217,6 +217,6 @@ on ragebot multipoint setup
 |                            | Type                                            | Description |
 | -------------------------- | ----------------------------------------------- | ----------- |
 | get\_player                | [c\_client\_entity](class/c\_client\_entity.md) |             |
-| hitbox                     | [hitbox](enumerations/e\_hitbox.md)             |             |
+| hitbox                     | [hitbox](enumerations/hitbox.md)                |             |
 | should\_multipoint\_hitbox | bool                                            |             |
 | should\_override           | bool                                            |             |
