@@ -1,5 +1,58 @@
 # Events
 
+## Function:
+
+### on\_lua\_unload
+
+**`hooks.on_lua_unload(function)`** <mark style="color:purple;">`:Void`</mark>
+
+|              | Type           | Description                 |
+| ------------ | -------------- | --------------------------- |
+| **function** | **`function`** | Functions to trigger unload |
+
+<pre class="language-lua"><code class="lang-lua"><strong>//Example #1
+</strong><strong>
+</strong><strong>function Unload()
+</strong><strong>    menu_antiaim.set_pitch(0)
+</strong><strong>end
+</strong><strong>
+</strong><strong>hooks.on_lua_unload(Unload)
+</strong><strong>
+</strong>//Example #2
+
+hooks.on_lua_unload(function()
+    menu_antiaim.set_pitch(0)
+end)</code></pre>
+
+### add\_hook
+
+**`hooks.add_hook(event name, function)`** <mark style="color:purple;">`:Void`</mark>
+
+|                | Type           | Description                 |
+| -------------- | -------------- | --------------------------- |
+| **event name** | **`string`**   | Name of the trigger event   |
+| **function**   | **`function`** | Functions to trigger events |
+
+```lua
+//Example #1
+
+function test() 
+    if (engine.is_ingame() and engine.is_connected()) then         
+        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", 255, 255, 255, 255, font_flags.centered_x); 
+    end 
+end 
+
+hooks.add_hook("on_draw", test)
+
+//Example #2
+
+hooks.add_hook("on_draw", function()
+    if (engine.is_ingame() and engine.is_connected()) then         
+        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", 255, 255, 255, 255, font_flags.centered_x); 
+    end
+end)
+```
+
 ## is\_button\_activeList of game events:
 
 {% embed url="https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events" %}
