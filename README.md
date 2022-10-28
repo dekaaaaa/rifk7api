@@ -47,4 +47,4 @@ Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and 
 
 [NineY](https://rifk7.com/index.php?members/niney.1804/) - Development and maintenance of rifk7's wiki
 
-Fearless\_Hamster - Development of rifk7's wiki
+[Fearless\_Hamster](https://rifk7.com/index.php?members/fearless.1917/) - Development of rifk7's wiki
