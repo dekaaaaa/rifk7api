@@ -18,6 +18,6 @@
 
 `global_vars.get_interval_per_tick():` <mark style="color:purple;">`float`</mark>
 
-### get\_interval\_per\_tick
+### get\_tickcount
 
-`global_vars.get_interval_per_tick():` <mark style="color:purple;">`int`</mark>
+`global_vars.get_tickcount():` <mark style="color:purple;">`int`</mark>
