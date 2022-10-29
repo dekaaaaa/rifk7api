@@ -53,7 +53,7 @@ hooks.add_hook("on_draw", function()
 end)
 ```
 
-## is\_button\_activeList of game events:
+## game events:
 
 {% embed url="https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events" %}
 Official CS:GO events
