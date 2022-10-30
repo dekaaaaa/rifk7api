@@ -1,5 +1,14 @@
 # 🏸 c\_cs\_player
 
+## Example：
+
+```lua
+local local_player = engine.get_local_player()
+local weapon = local_player:get_active_weapon()
+```
+
+## Table：
+
 | Name                   | function parameter                                             | Return type                                 | Description |
 | ---------------------- | -------------------------------------------------------------- | ------------------------------------------- | ----------- |
 | is\_enemy              |                                                                | bool                                        |             |
