@@ -22,7 +22,7 @@
 
 ### get\_text\_size
 
-`renderer.get_text_size(std::string text):` <mark style="color:purple;">`void`</mark>
+`renderer.get_text_size(std::string text):` [<mark style="color:purple;">`c_vector2d`</mark>](../class/c\_vector2d.md)<mark style="color:purple;">``</mark>
 
 ### draw\_player\_profile\_picture
 
