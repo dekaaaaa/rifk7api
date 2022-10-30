@@ -172,7 +172,7 @@ Keybinds key code
 
 `menu.add_colorpicker(std::string name,float_red,float_green,float_blue, float_alpha,alpha_slider):` <mark style="color:purple;">`void`</mark>
 
-`menu.add`\_second`_colorpicker(std::string name,float_red,float_green,float_blue, float_alpha,alpha_slider):` <mark style="color:purple;">`void`</mark>
+`menu.add_second_colorpicker(std::string name,float_red,float_green,float_blue, float_alpha,alpha_slider):` <mark style="color:purple;">`void`</mark>
 
 | Name          | Type |
 | ------------- | ---- |
