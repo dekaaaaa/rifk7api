@@ -198,7 +198,7 @@ menu.add\_multiselection("Example Multiselection", "First Value\0Second Value\0T
 
 ### get\_multiselection\_item
 
-`menu.add_multiselection(std::string text, slot):` <mark style="color:purple;">`bool`</mark>
+`menu.`get\_multiselection\_item`(std::string text, slot):` <mark style="color:purple;">`bool`</mark>
 
 | Name | Type |
 | ---- | ---- |
