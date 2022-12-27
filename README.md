@@ -32,8 +32,6 @@ For information on how to get started with lua scripting, check out the link bel
 * String
 * Utf8
 * Bit32
-* Table
-* Package
 {% endtab %}
 {% endtabs %}
 
