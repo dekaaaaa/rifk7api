@@ -12,31 +12,22 @@
 
 ### dispatch\_effect
 
-`effects.dispatch_effect(std::string effect, origin):` <mark style="color:purple;">`void`</mark>
-
-| Name   | Type        |
-| ------ | ----------- |
-| origin | c\_vector3d |
+`effects.dispatch_effect(std::string effect, float org_x, float org_y, float org_z):` <mark style="color:purple;">`void`</mark>
 
 ### dispatch\_particle\_effect
 
-`effects.dispatch_particle_effect(std::string particle_effect, origin):` <mark style="color:purple;">`void`</mark>
-
-| Name   | Type        |
-| ------ | ----------- |
-| origin | c\_vector3d |
+`effects.dispatch_particle_effect(std::string particle_effect, float org_x, float org_y, float org_z):` <mark style="color:purple;">`void`</mark>
 
 ### dispatch\_tesla
 
-`effects.dispatch_particle_effect(origin, time, radius, beams, width, std::string sprite_name, float_red, float_green, float_blue):` <mark style="color:purple;">`void`</mark>
+`effects.dispatch_particle_effect(float org_x, float org_y, float org_z, time, radius, beams, width, std::string sprite_name, float_red, float_green, float_blue):` <mark style="color:purple;">`void`</mark>
 
-| Name   | Type        |
-| ------ | ----------- |
-| origin | c\_vector3d |
-| time   | float       |
-| radius | float       |
-| beams  | float       |
-| width  | float       |
+| Name   | Type  |
+| ------ | ----- |
+| time   | float |
+| radius | float |
+| beams  | float |
+| width  | float |
 
 ### dispatch\_smoke
 
@@ -115,13 +106,12 @@
 
 ### draw\_beam
 
-`effects.draw_lights(start, end, std::string sprite, time, width, amplitude, speed, segments, float_red, float_green, float_blue, float_alpha):` <mark style="color:purple;">`void`</mark>
+`effects.draw_lights(float start_x, float start_y, float start_z, float end_x, float end_y, float end_z, std::string sprite, time, width, amplitude, speed, segments, float_red, float_green, float_blue, float_alpha):` <mark style="color:purple;">`void`</mark>
 
-| Name      | Type        |
-| --------- | ----------- |
-| start/end | c\_vector3d |
-| time      | float       |
-| width     | float       |
-| amplitude | float       |
-| speed     | float       |
-| segments  | int         |
+| Name      | Type  |
+| --------- | ----- |
+| time      | float |
+| width     | float |
+| amplitude | float |
+| speed     | float |
+| segments  | int   |

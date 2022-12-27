@@ -2,54 +2,87 @@
 
 ## Function:
 
-### on\_lua\_unload
+### add\_callback
 
-**`hooks.on_lua_unload(function)`** <mark style="color:purple;">`:Void`</mark>
+**`hooks.add_callback(hook_name, protected_function)`** <mark style="color:purple;">`:Void`</mark>
 
-|              | Type           | Description                 |
-| ------------ | -------------- | --------------------------- |
-| **function** | **`function`** | Functions to trigger unload |
+|                         | Type           | Description                 |
+| ----------------------- | -------------- | --------------------------- |
+| **`hook_name`**         | **`string`**   | event name                  |
+| **`protected`function** | **`function`** | Functions to trigger unload |
 
-<pre class="language-lua"><code class="lang-lua"><strong>//Example #1
-</strong><strong>
-</strong><strong>function Unload()
-</strong><strong>    menu_antiaim.set_pitch(0)
-</strong><strong>end
-</strong><strong>
-</strong><strong>hooks.on_lua_unload(Unload)
-</strong><strong>
-</strong>//Example #2
+```lua
+-- Source: https://rifk7.com/index.php?threads/events.294/
+-- events always get verified before the lua callback runs.
 
-hooks.on_lua_unload(function()
-    menu_antiaim.set_pitch(0)
-end)</code></pre>
+//Example #1
+function test(event)
+    print(event:get_name());
+end
 
-### add\_hook
+hooks.add_callback("on_event", test);
 
-**`hooks.add_hook(event name, function)`** <mark style="color:purple;">`:Void`</mark>
+//Example #2
+
+hooks.add_callback("on_event", function()
+    print(event:get_name());
+end);
+```
+
+### add\_lua\_unload\_callback
+
+**`hooks.add_lua_unload_callback(function)`** <mark style="color:purple;">`:Void`</mark>
 
 |                | Type           | Description                 |
 | -------------- | -------------- | --------------------------- |
-| **event name** | **`string`**   | Name of the trigger event   |
-| **function**   | **`function`** | Functions to trigger events |
+| **`function`** | **`function`** | Functions to trigger events |
 
 ```lua
 //Example #1
 
 function test() 
-    if (engine.is_ingame() and engine.is_connected()) then         
-        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", 255, 255, 255, 255, font_flags.centered_x); 
-    end 
+    print("Unload lua")
 end 
 
-hooks.add_hook("on_draw", test)
+hooks.add_lua_unload_callback(test)
 
 //Example #2
 
-hooks.add_hook("on_draw", function()
-    if (engine.is_ingame() and engine.is_connected()) then         
-        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", 255, 255, 255, 255, font_flags.centered_x); 
-    end
+hooks.add_lua_unload_callback(function()
+    print("Unload lua")
+end)
+```
+
+### add\_menu\_callback
+
+**`hooks.add_menu_callback(menu_item_name, protected_function)`** <mark style="color:purple;">`:Void`</mark>
+
+|                          | Type           | Description                 |
+| ------------------------ | -------------- | --------------------------- |
+| **`menu_item_name`**     | **`String`**   | Menu name                   |
+| **`protected_function`** | **`function`** | Functions to trigger unload |
+
+```lua
+local checkbox_item = menu.add_checkbox("Example Checkbox", false);
+hooks.add_menu_callback("Example Checkbox", function()
+    print("test")
+end)
+```
+
+### add\_delayed\_callback
+
+**`hooks.add_delayed_callback(delay, protected_function)`** <mark style="color:purple;">`:Void`</mark>
+
+|                          | Type           | Description                 |
+| ------------------------ | -------------- | --------------------------- |
+| **`delay`**              | **`float`**    | Delay time                  |
+| **`protected_function`** | **`function`** | Functions to trigger unload |
+
+```lua
+local num = 1 
+hooks.add_delayed_callback(10, function()
+    print(num)
+    num = num + 1
 end)
 ```
 
@@ -59,15 +92,14 @@ end)
 Official CS:GO events
 {% endembed %}
 
-```lua
-function test(event) 
-    if(event ~= nil) then 
-        print(event:get_name()); 
-    end 
-end 
-  
-hooks.add_hook("on_event", test);
-```
+<pre class="language-lua"><code class="lang-lua">-- Source: https://rifk7.com/index.php?threads/events.294/
+<strong>
+</strong><strong>function test(event)
+</strong>    print(event:get_name());
+end
+
+hooks.add_callback("on_event", test);
+</code></pre>
 
 ## List of events:
 
@@ -76,15 +108,17 @@ hooks.add_hook("on_event", test);
 Fired every frame. Most functions from the renderer namespace can only be used here
 
 ```lua
-function test() 
-    if (engine.is_ingame() and engine.is_connected()) then         
-        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", 255, 255, 255, 255, font_flags.centered_x); 
-        renderer.draw_line_multicolored(renderer.get_center().x, renderer.get_center().y + 35, renderer.get_center().x + 40 * clientstate.get_choked_ticks() / 15.0, renderer.get_center().y + 35, 255, 255, 255, 255, 255, 255, 255, 0); 
-        renderer.draw_line_multicolored(renderer.get_center().x, renderer.get_center().y + 35, renderer.get_center().x - 40 * clientstate.get_choked_ticks() / 15.0, renderer.get_center().y + 35, 255, 255, 255, 255, 255, 255, 255, 0);         
-    end 
-end 
+-- Source: https://rifk7.com/index.php?threads/drawing.293/
 
-hooks.add_hook("on_draw", test)
+function test()
+    if (engine.is_ingame() and engine.is_connected()) then   
+        renderer.draw_text(renderer.get_center().x, renderer.get_center().y + 15, "choke me daddy", renderer.get_font(fonts.default), 255, 255, 255, 255, font_flags.centered_x);
+        renderer.draw_line_multicolored(renderer.get_center().x, renderer.get_center().y + 35, renderer.get_center().x + 40 * clientstate.get_choked_ticks() / 15.0, renderer.get_center().y + 35, 255, 255, 255, 255, 255, 255, 255, 0);
+        renderer.draw_line_multicolored(renderer.get_center().x, renderer.get_center().y + 35, renderer.get_center().x - 40 * clientstate.get_choked_ticks() / 15.0, renderer.get_center().y + 35, 255, 255, 255, 255, 255, 255, 255, 0);   
+    end
+end
+
+hooks.add_callback("on_draw", test)
 ```
 
 ### on\_paint
@@ -98,6 +132,10 @@ Fired every frame.&#x20;
 ### on\_level\_clear
 
 on\_level\_init\_pre\_entity
+
+### on\_delayed\_loop
+
+runs every 500ms
 
 ### on\_event
 
@@ -120,6 +158,8 @@ Fired game events
 ### on\_drawmodel&#x20;
 
 on drawing model&#x20;
+
+return lua\_dme/original
 
 #### 🔗 struct <mark style="color:blue;">`lua_dme`</mark>
 
@@ -156,13 +196,6 @@ start of createmove
 ### on\_createmove\_pre\_antiaim
 
 before antiaim
-
-#### 🔗 struct <mark style="color:blue;">`lua_createmove`</mark>
-
-|                   | Type                                          | Description |
-| ----------------- | --------------------------------------------- | ----------- |
-| cmd               | [c\_user\_cmd](events.md#struct-c\_user\_cmd) |             |
-| ragebot\_shooting | bool                                          |             |
 
 ### on\_override\_view
 

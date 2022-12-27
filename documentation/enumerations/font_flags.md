@@ -1,10 +1,12 @@
-# 📜 e\_font\_flags
+# 📜 font\_flags
 
 {% tabs %}
 {% tab title="Functions:" %}
 `centered_x`
 
 `centered_y`
+
+`centered`
 
 `right_aligned`
 

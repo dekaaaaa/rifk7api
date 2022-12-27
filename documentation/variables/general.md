@@ -53,3 +53,27 @@
 | Name   | Type  |
 | ------ | ----- |
 | volume | float |
+
+### play\_custom\_sound
+
+`general.play_custom_sound(std::string sound_file, volume)` <mark style="color:purple;"></mark> <mark style="color:purple;"></mark><mark style="color:purple;">`void`</mark>
+
+### is\_key\_pressed
+
+`general.is_key_pressed(int button)` <mark style="color:purple;"></mark> <mark style="color:purple;"></mark><mark style="color:purple;">`bool`</mark>
+
+### is\_key\_active
+
+`general.is_key_active(int button, int mode)` <mark style="color:purple;"></mark> <mark style="color:purple;"></mark><mark style="color:purple;">`bool`</mark>
+
+### override\_clantag
+
+`general.override_clantag()` <mark style="color:purple;">`void`</mark>
+
+### set\_mouse\_cursor\_visible
+
+`general.set_mouse_cursor_visible(bool visible)` <mark style="color:purple;">`void`</mark>
+
+### get\_mouse\_cursor\_position
+
+`general.get_mouse_cursor_position()` <mark style="color:purple;">`c_vector2d`</mark>

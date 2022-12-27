@@ -20,6 +20,10 @@ Return to player recharge status
 
 Returns whether the player is fakeduck
 
+### set\_allow\_recharge
+
+`ragebot.set_allow_recharge(bool allow):` <mark style="color:purple;">`void`</mark>
+
 ### get\_missed\_shots\_resolver
 
 `ragebot.get_missed_shots_resolver(index):` <mark style="color:purple;">`int`</mark>
@@ -41,3 +45,11 @@ Returns whether the player is fakeduck
 `ragebot.get_quickpeek_origin():` <mark style="color:purple;">`c_vector3d`</mark>
 
 Returns the coordinates of the activated quickpeek
+
+### get\_weapon\_config
+
+`ragebot.get_weapon_config():` <mark style="color:purple;">`int`</mark>
+
+### force\_teleport
+
+`ragebot.force_teleport():` <mark style="color:purple;">`void`</mark>

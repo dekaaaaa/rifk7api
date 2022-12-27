@@ -4,7 +4,7 @@
 
 ### draw\_text
 
-`renderer.draw_text(x,y,std::string text,float_red,float_green,float_blue,float_alpha,flags):` <mark style="color:purple;">`void`</mark>
+`renderer.draw_text(x, y, std::string text, ImFont* font, float red, float green, float blue, float alpha, flags):` <mark style="color:purple;">`void`</mark>
 
 | Name  | Type                                          |
 | ----- | --------------------------------------------- |
@@ -13,16 +13,40 @@
 
 ### draw\_text\_clipped
 
-`renderer.draw_text_clipped(x,y,std::string text,float_red,float_green,float_blue,float_alpha,flags,clipped_x,clipped_y, clipped_h,clipped_w):` <mark style="color:purple;">`void`</mark>
+`renderer.draw_text_clipped(x, y, std::string text, ImFont* font,float_red,float_green,float_blue,float_alpha,flags,clipped_x,clipped_y, clipped_h,clipped_w):` <mark style="color:purple;">`void`</mark>
 
 | Name             | Type  |
 | ---------------- | ----- |
 | x/y              | float |
 | clipped\_x/y/h/w | float |
 
+### get\_font\_range
+
+`renderer.get_font_range(font_range range):` <mark style="color:purple;">`ImWchar*`</mark>
+
+### add\_font
+
+`renderer.add_font(std::string name, std::string font_file, float size, bool bold, ImWchar* range):` <mark style="color:purple;">`ImFont*`</mark>
+
+### add\_merge\_font
+
+`renderer.add_merge_font(std::string font_file, float size, bool bold, ImWchar* range):` <mark style="color:purple;">`void`</mark>
+
+### build\_fonts
+
+`renderer.build_fonts()` <mark style="color:purple;">`void`</mark>
+
+### find\_font
+
+`renderer.find_font(std::string name):` <mark style="color:purple;">`ImFont*`</mark>
+
+### fonts font
+
+`renderer.get_font(fonts font):` <mark style="color:purple;">`ImFont*`</mark>
+
 ### get\_text\_size
 
-`renderer.get_text_size(std::string text):` [<mark style="color:purple;">`c_vector2d`</mark>](../class/c\_vector2d.md)<mark style="color:purple;">``</mark>
+`renderer.get_text_size(std::string text, ImFont* font):` [<mark style="color:purple;">`c_vector2d`</mark>](../class/c\_vector2d.md)<mark style="color:purple;">``</mark>
 
 ### draw\_player\_profile\_picture
 
@@ -164,6 +188,14 @@
 | side        | float |
 | radius      | float |
 
+### draw\_image
+
+`renderer.draw_image(LPDIRECT3DTEXTURE9 texture, float start_x, float start_y, float size_x, float size_y, float red, float green, float blue, float alpha, float rounding):` <mark style="color:purple;">`c_vector2d`</mark>
+
+### get\_texture
+
+`renderer.get_texture(textures texture):` <mark style="color:purple;">`LPDIRECT3DTEXTURE9`</mark>
+
 ### get\_center
 
 `renderer.get_center():` <mark style="color:purple;">`c_vector2d`</mark>
@@ -245,3 +277,7 @@
 | x/y      | float                                         |
 | rounding | float                                         |
 | flags    | [path\_flags](../enumerations/path\_flags.md) |
+
+### disable\_scope\_drawing
+
+`renderer.disable_scope_drawing(bool set_value):` <mark style="color:purple;">`void`</mark>

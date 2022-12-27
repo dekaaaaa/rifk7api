@@ -12,6 +12,7 @@ local weapon = local_player:get_active_weapon()
 | Name                   | function parameter                                             | Return type                                 | Description |
 | ---------------------- | -------------------------------------------------------------- | ------------------------------------------- | ----------- |
 | is\_enemy              |                                                                | bool                                        |             |
+| is\_alive              |                                                                | bool                                        |             |
 | get\_abs\_origin       |                                                                | [c\_vector3d](c\_vector3d.md)               |             |
 | get\_abs\_angles       |                                                                | [c\_vector3d](c\_vector3d.md)               |             |
 | get\_active\_weapon    |                                                                | [c\_client\_entity\*](c\_client\_entity.md) |             |
