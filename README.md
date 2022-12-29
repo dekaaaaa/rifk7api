@@ -32,6 +32,8 @@ For information on how to get started with lua scripting, check out the link bel
 * String
 * Utf8
 * Bit32
+* Table
+* Package
 {% endtab %}
 {% endtabs %}
 
@@ -48,3 +50,8 @@ Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and 
 [NineY](https://rifk7.com/index.php?members/niney.1804/) - Development and maintenance of rifk7's wiki
 
 [Fearless\_Hamster](https://rifk7.com/index.php?members/fearless.1917/) - Development of rifk7's wiki
+
+## Rifk7 Translation Project
+
+* ****:flag\_cn: **中国 / Chinese**
+  * ****[**https://r7cn.hvhbbs.com/**](https://r7cn.hvhbbs.com/)****
