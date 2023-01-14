@@ -22,9 +22,9 @@
 
 `engine.get_player_for_uid(index):` <mark style="color:purple;">`int`</mark>
 
-| Name  | Type |
-| ----- | ---- |
-| index | int  |
+| Name   | Type |
+| ------ | ---- |
+| userid | int  |
 
 ### get\_max\_players
 

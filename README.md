@@ -11,7 +11,7 @@ description: Welcome to the Rifk7 lua wiki!
 rifk7 is a very good cheat for Antiaim and Ragebot, with a team that can provide quick help and a great forum environment
 
 {% hint style="info" %}
-Lua version: latest ( 5.4.4 )
+Lua version: ~~latest ( 5.4.4 )~~ LuaJIT
 {% endhint %}
 
 ## Getting Started
@@ -34,6 +34,7 @@ For information on how to get started with lua scripting, check out the link bel
 * Bit32
 * Table
 * Package
+* FFI (FFI with limitations)
 {% endtab %}
 {% endtabs %}
 

@@ -28,10 +28,6 @@ return menu size
 
 `menu.get_username():` <mark style="color:purple;">`string`</mark>
 
-### get\_smooth\_colors
-
-`menu.get_smooth_colors():` <mark style="color:purple;">`color`</mark>
-
 ### get
 
 `menu.get(int index):` <mark style="color:purple;">`c_lua_menu_item`</mark>
@@ -47,6 +43,10 @@ return menu size
 ### add\_slider
 
 `menu.add_slider(std::string name, float default_value, float min, float max):` <mark style="color:purple;">`int`</mark>
+
+### add\_combo
+
+`menu.add_combo(std::string name, int default_value, std::string items)` <mark style="color:purple;">`int`</mark>
 
 ### add\_keybind
 

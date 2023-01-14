@@ -53,3 +53,7 @@ Returns the coordinates of the activated quickpeek
 ### force\_teleport
 
 `ragebot.force_teleport():` <mark style="color:purple;">`void`</mark>
+
+### tick\_should\_be\_hidden
+
+`ragebot.tick_should_be_hidden():` <mark style="color:purple;">`bool`</mark>

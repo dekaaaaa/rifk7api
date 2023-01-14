@@ -2,6 +2,8 @@
 
 | Name           | Return type | Description                |
 | -------------- | ----------- | -------------------------- |
-| uid            | int         | Return userid              |
+| userid         | int         | Return userid              |
 | is\_fakeplayer | bool        | Return true if it is a bot |
 | name           | std::string |                            |
+| is\_hltv       | bool        |                            |
+| steamid        | int         |                            |

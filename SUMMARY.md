@@ -46,6 +46,7 @@
   * [🖼 textures](documentation/enumerations/textures.md)
   * [✏ fonts](documentation/enumerations/fonts.md)
   * [🏁 font\_ranges](documentation/enumerations/font\_ranges.md)
+  * [🧑🦽 move\_type](documentation/enumerations/move\_type.md)
   * [📜 font\_flags](documentation/enumerations/font\_flags.md)
 * [Variables](documentation/variables/README.md)
   * [❄ general](documentation/variables/general.md)

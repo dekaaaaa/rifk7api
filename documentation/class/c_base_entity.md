@@ -2,6 +2,7 @@
 
 | Name               | function parameter                                                                                | Return type                   | Description |
 | ------------------ | ------------------------------------------------------------------------------------------------- | ----------------------------- | ----------- |
+| get\_move\_type    | move\_types type                                                                                  | bool                          |             |
 | get\_team          |                                                                                                   | int                           |             |
 | get\_origin        |                                                                                                   | [c\_vector3d](c\_vector3d.md) |             |
 | get\_mins          |                                                                                                   | [c\_vector3d](c\_vector3d.md) |             |

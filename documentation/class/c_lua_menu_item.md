@@ -16,7 +16,8 @@
 | set\_int                    | int value             | void        |             |
 | get\_color                  |                       | c\_color    |             |
 | set\_color                  | float(r, g, b, a)     | void        |             |
-| get\_c\_color               | c\_color color        | void        |             |
+| get\_c\_color               |                       | c\_color    |             |
+| set\_c\_color               | c\_color color        | void        |             |
 | get\_multiselection\_item   | int slot              | bool        |             |
 | set\_multiselection\_item   | int slot, bool value  | void        |             |
 | is\_keybind\_active         |                       | bool        |             |

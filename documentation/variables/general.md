@@ -6,6 +6,10 @@
 
 `general.log(std::string text)` <mark style="color:purple;">`void`</mark>
 
+### log\_notify
+
+`general.log_notify(std::string text)` <mark style="color:purple;">`void`</mark>
+
 ### log\_to\_console
 
 `general.log_to_console(std::string text)` <mark style="color:purple;">`void`</mark>
@@ -20,7 +24,7 @@
 
 ### time\_to\_ticks
 
-`general.time_to_ticks(float)` <mark style="color:purple;">`void`</mark>
+`general.time_to_ticks(float)` <mark style="color:purple;">`int`</mark>
 
 ### get\_convar
 
@@ -77,3 +81,7 @@
 ### get\_mouse\_cursor\_position
 
 `general.get_mouse_cursor_position()` <mark style="color:purple;">`c_vector2d`</mark>
+
+### create\_interface
+
+`general.create_interface(std::string module_name, std::string interace)` <mark style="color:purple;">`void*`</mark>
