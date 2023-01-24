@@ -55,6 +55,7 @@
   * [🦿 menu\_antiaim](documentation/variables/menu\_antiaim.md)
   * [📃 filesystem](documentation/variables/filesystem.md)
   * [💣 debug\_overlay](documentation/variables/debug\_overlay.md)
+  * [🌐 http](documentation/variables/http.md)
   * [🧷 global\_vars](documentation/variables/global\_vars.md)
   * [📽 netchannel](documentation/variables/netchannel.md)
   * [🧶 renderer](documentation/variables/renderer.md)

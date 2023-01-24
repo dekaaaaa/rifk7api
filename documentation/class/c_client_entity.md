@@ -16,6 +16,7 @@ local local_player_alive = local_player:get_netvar_int("m_lifeState") ~= 0
 | get\_netvar\_bool        | `string` var                                         | `bool`                             |             |
 | get\_netvar\_string      | `string` var                                         | `string`                           |             |
 | get\_netvar\_c\_vector3d | `string` var                                         | ``[`c_vector3d`](c\_vector3d.md)`` |             |
+| get\_netvar\_handle      | `string` var                                         | `c_base_handle`                    |             |
 | set\_netvar\_int         | (`string` var, `int` value)                          | `void`                             |             |
 | set\_netvar\_float       | (`string` var, `float` value)                        | `void`                             |             |
 | set\_netvar\_bool        | (`string` var, `bool` value)                         | `void`                             |             |

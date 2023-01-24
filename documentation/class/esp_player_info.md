@@ -22,6 +22,8 @@
 | is\_defusing              | bool                           |               |
 | has\_helmet               | bool                           |               |
 | has\_kevlar               | bool                           |               |
+| is\_r7\_user              | bool                           |               |
+| uses\_shared\_esp         | bool                           |               |
 | is\_steam\_friend         | bool                           |               |
 | get\_bb\_start            | [c\_vector2d](c\_vector2d.md)  |               |
 | get\_bb\_size             | [c\_vector2d](c\_vector2d.md)  |               |

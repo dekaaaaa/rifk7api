@@ -14,6 +14,14 @@
 | ----- | ---- |
 | index | int  |
 
+### get\_entity\_from\_handle
+
+`entity_list.get_entity(handle):` <mark style="color:purple;">`table c_client_entity`</mark>
+
+| Name   | Type            |
+| ------ | --------------- |
+| handle | c\_base\_handle |
+
 ### get\_player\_array\_size
 
 `entity_list.get_player_array_size():` <mark style="color:purple;">`int`</mark>
