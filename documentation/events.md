@@ -9,7 +9,7 @@
 |                         | Type           | Description                 |
 | ----------------------- | -------------- | --------------------------- |
 | **`hook_name`**         | **`string`**   | event name                  |
-| **`protected`function** | **`function`** | Functions to trigger unload |
+| **`protected`function** | **`function`** | Functions to trigger events |
 
 ```lua
 -- Source: https://rifk7.com/index.php?threads/events.294/
@@ -33,9 +33,9 @@ end);
 
 **`hooks.add_lua_unload_callback(function)`** <mark style="color:purple;">`:Void`</mark>
 
-|                | Type           | Description                 |
-| -------------- | -------------- | --------------------------- |
-| **`function`** | **`function`** | Functions to trigger events |
+|                | Type           | Description                        |
+| -------------- | -------------- | ---------------------------------- |
+| **`function`** | **`function`** | Functions to trigger unload script |
 
 ```lua
 //Example #1
@@ -57,10 +57,10 @@ end)
 
 **`hooks.add_menu_callback(menu_item_name, protected_function)`** <mark style="color:purple;">`:Void`</mark>
 
-|                          | Type           | Description                 |
-| ------------------------ | -------------- | --------------------------- |
-| **`menu_item_name`**     | **`String`**   | Menu name                   |
-| **`protected_function`** | **`function`** | Functions to trigger unload |
+|                          | Type           | Description                     |
+| ------------------------ | -------------- | ------------------------------- |
+| **`menu_item_name`**     | **`String`**   | Menu name                       |
+| **`protected_function`** | **`function`** | Functions to trigger menu value |
 
 ```lua
 local checkbox_item = menu.add_checkbox("Example Checkbox", false);
@@ -73,10 +73,10 @@ end)
 
 **`hooks.add_delayed_callback(delay, protected_function)`** <mark style="color:purple;">`:Void`</mark>
 
-|                          | Type           | Description                 |
-| ------------------------ | -------------- | --------------------------- |
-| **`delay`**              | **`float`**    | Delay time                  |
-| **`protected_function`** | **`function`** | Functions to trigger unload |
+|                          | Type           | Description                |
+| ------------------------ | -------------- | -------------------------- |
+| **`delay`**              | **`float`**    | Delay time                 |
+| **`protected_function`** | **`function`** | Functions to trigger delay |
 
 ```lua
 local num = 1 
@@ -85,6 +85,27 @@ hooks.add_delayed_callback(10, function()
     num = num + 1
 end)
 ```
+
+### add\_voice\_msg\_callback&#x20;
+
+**`hooks.add_voice_msg_callback(packet_id, protected_function)`** <mark style="color:purple;">`:Void`</mark>
+
+|                          | Type           | Description                |
+| ------------------------ | -------------- | -------------------------- |
+| **`packet_id`**          | **`int`**      | packet id                  |
+| **`protected_function`** | **`function`** | Functions to trigger event |
+
+#### Function value:
+
+| Name               | Type      |
+| ------------------ | --------- |
+| **`sender_index`** | **`int`** |
+| **`value_1`**      | **`int`** |
+| **`value_2`**      | **`int`** |
+| **`value_3`**      | **`int`** |
+| **`value_4`**      | `int`     |
+
+
 
 ## game events:
 
@@ -253,3 +274,14 @@ on ragebot multipoint setup
 | hitbox                     | [hitbox](enumerations/hitbox.md)                |             |
 | should\_multipoint\_hitbox | bool                                            |             |
 | should\_override           | bool                                            |             |
+
+### on\_dispatch\_user\_message
+
+on\_dispatch\_user\_message
+
+🔗 struct <mark style="color:blue;">**`dispatch_user_message`**</mark>
+
+|               | Type     | Description |
+| ------------- | -------- | ----------- |
+| message\_type | int      |             |
+| message       | bf\_read |             |

@@ -131,3 +131,27 @@
 ### get\_skybox\_texture\_3\_material
 
 `model_render.get_skybox_texture_3_material():` <mark style="color:purple;">`table c_material`</mark>
+
+### get\_first\_material
+
+`model_render.get_first_material():` <mark style="color:purple;">`material_handle`</mark>
+
+### get\_next\_material
+
+`model_render.get_next_material(handle):` <mark style="color:purple;">`material_handle`</mark>
+
+| Name   | Type                                                    |
+| ------ | ------------------------------------------------------- |
+| handle | <mark style="color:purple;">**material\_handle**</mark> |
+
+### is\_invalid\_material
+
+`model_render.is_invalid_material():` <mark style="color:purple;">`material_handle`</mark>
+
+### get\_material
+
+`model_render.get_material(handle):` <mark style="color:purple;">`c_material*`</mark>
+
+| Name   | Type                                                    |
+| ------ | ------------------------------------------------------- |
+| handle | <mark style="color:purple;">**material\_handle**</mark> |

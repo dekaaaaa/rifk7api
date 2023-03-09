@@ -57,3 +57,7 @@
 ### execute\_console\_command
 
 `engine.execute_console_command(std::string text):` <mark style="color:purple;">`void`</mark>
+
+### send\_share\_packet
+
+`engine.execute_console_command(int packet_id, int value_1, int value_2, int value_3, int value_4):` <mark style="color:purple;">`void`</mark>

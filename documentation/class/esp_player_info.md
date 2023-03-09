@@ -27,3 +27,4 @@
 | is\_steam\_friend         | bool                           |               |
 | get\_bb\_start            | [c\_vector2d](c\_vector2d.md)  |               |
 | get\_bb\_size             | [c\_vector2d](c\_vector2d.md)  |               |
+| is\_visible               |                                | bool          |

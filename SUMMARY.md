@@ -30,6 +30,8 @@
   * [🖥 c\_material](documentation/class/c\_material.md)
   * [☺ c\_material\_var](documentation/class/c\_material\_var.md)
   * [⏲ c\_lua\_menu\_item](documentation/class/c\_lua\_menu\_item.md)
+  * [🕵♂ bf\_read](documentation/class/bf\_read.md)
+  * [⛏ autowall](documentation/class/autowall.md)
   * [🚑 c\_client\_entity](documentation/class/c\_client\_entity.md)
 * [Enumerations](documentation/enumerations/README.md)
   * [🤿 manual\_direction](documentation/enumerations/manual\_direction.md)

@@ -21,3 +21,15 @@
 | x/y/z  | float                                         |
 | mask   | [trace\_mask](../enumerations/trace\_mask.md) |
 | ignore | c\_client\_entity\*                           |
+
+### autowall\_trace
+
+`engine_game_trace.autowall_trace(enemy, hitpoint_x, hitpoint_y, hitpoint_z, hitbox):` <mark style="color:purple;">**`autowall*`**</mark>
+
+| Name        | Type             |
+| ----------- | ---------------- |
+| enemy       | c\_cs\_player\*  |
+| hitpoint\_x | float            |
+| hitpoint\_y | float            |
+| hitpoint\_z | float            |
+| hitbox      | int              |
