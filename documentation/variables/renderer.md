@@ -40,7 +40,7 @@
 
 `renderer.find_font(std::string name):` <mark style="color:purple;">`ImFont*`</mark>
 
-### fonts font
+### get\_font
 
 `renderer.get_font(fonts font):` <mark style="color:purple;">`ImFont*`</mark>
 
@@ -191,6 +191,10 @@
 ### draw\_image
 
 `renderer.draw_image(LPDIRECT3DTEXTURE9 texture, float start_x, float start_y, float size_x, float size_y, float red, float green, float blue, float alpha, float rounding):` <mark style="color:purple;">`c_vector2d`</mark>
+
+### create\_texture
+
+`renderer.create_texture(std::string data, int size):` <mark style="color:purple;">`LPDIRECT3DTEXTURE9`</mark>
 
 ### get\_texture
 

@@ -285,3 +285,14 @@ on\_dispatch\_user\_message
 | ------------- | -------- | ----------- |
 | message\_type | int      |             |
 | message       | bf\_read |             |
+
+### on\_console\_input
+
+* clientcmd unrestricted&#x20;
+* on dispatching console commands
+
+🔗 struct <mark style="color:blue;">**`console_input`**</mark>
+
+|      | Type        | Description |
+| ---- | ----------- | ----------- |
+| text | std::string |             |

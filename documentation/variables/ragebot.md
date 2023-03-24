@@ -57,3 +57,11 @@ Returns the coordinates of the activated quickpeek
 ### tick\_should\_be\_hidden
 
 `ragebot.tick_should_be_hidden():` <mark style="color:purple;">`bool`</mark>
+
+### set\_quickpeek\_origin
+
+`ragebot.set_quickpeek_origin(origin):` <mark style="color:purple;">`void`</mark>
+
+| Name   | Type        |
+| ------ | ----------- |
+| origin | c\_vector3d |

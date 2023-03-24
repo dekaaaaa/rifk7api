@@ -85,3 +85,11 @@
 ### create\_interface
 
 `general.create_interface(std::string module_name, std::string interace)` <mark style="color:purple;">`void*`</mark>
+
+### force\_mouse\_cursor
+
+`general.force_mouse_cursor(bool force)` <mark style="color:purple;">`void`</mark>
+
+### disable\_keyboard\_inputs
+
+`general.disable_keyboard_inputs(bool disable)` <mark style="color:purple;">`void`</mark>

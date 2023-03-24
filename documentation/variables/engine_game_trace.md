@@ -4,7 +4,7 @@
 
 ### get\_line
 
-`engine_game_trace.get_line(start_x, start_y, start_z, end_x, end_y, end_z, mask, ignore):` <mark style="color:purple;">`game_trace*`</mark>
+`engine_game_trace.get_line(start_x, start_y, start_z, end_x, end_y, end_z, mask, ignore):` <mark style="color:purple;">**`game_trace*`**</mark>
 
 | Name   | Type                                          |
 | ------ | --------------------------------------------- |
@@ -14,7 +14,7 @@
 
 ### get\_hull
 
-`engine_game_trace.get_line(start_x, start_y, start_z, end_x, end_y, end_z, mins_x, mins_y, mins_z, maxs_x, maxs_y, maxs_z, mask, ignore):` <mark style="color:purple;">`game_trace*`</mark>
+`engine_game_trace.get_line(start_x, start_y, start_z, end_x, end_y, end_z, mins_x, mins_y, mins_z, maxs_x, maxs_y, maxs_z, mask, ignore):` <mark style="color:purple;">**`game_trace*`**</mark>
 
 | Name   | Type                                          |
 | ------ | --------------------------------------------- |
@@ -33,3 +33,16 @@
 | hitpoint\_y | float            |
 | hitpoint\_z | float            |
 | hitbox      | int              |
+
+### can\_hit\_hitbox
+
+`engine_game_trace.can_hit_hitbox(c_cs_player* shooter, c_cs_player* victim, float end_x, float end_y, float end_z, int hitbox)` <mark style="color:purple;">**`bool`**</mark>
+
+| Name    | Type             |
+| ------- | ---------------- |
+| shooter | c\_cs\_player\*  |
+| victim  | c\_cs\_player\*  |
+| end\_x  | float            |
+| end\_y  | float            |
+| end\_z  | float            |
+| hitbox  | int              |
