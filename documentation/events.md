@@ -296,3 +296,15 @@ on\_dispatch\_user\_message
 |      | Type        | Description |
 | ---- | ----------- | ----------- |
 | text | std::string |             |
+
+### on\_at\_targets
+
+* createmove
+* on at targets selection
+
+🔗 struct <mark style="color:blue;">**`at_targets`**</mark>
+
+|                  | Type                                      | Description |
+| ---------------- | ----------------------------------------- | ----------- |
+| get\_player      | [c\_cs\_player\*](class/c\_cs\_player.md) |             |
+| should\_override | bool                                      |             |

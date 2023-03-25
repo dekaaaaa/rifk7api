@@ -44,6 +44,10 @@
 
 `renderer.get_font(fonts font):` <mark style="color:purple;">`ImFont*`</mark>
 
+### create\_font
+
+`renderer.create_font(std::string name, std::string data, int size, bool bold, bool merge, float font_size):` <mark style="color:purple;">`ImFont*`</mark>
+
 ### get\_text\_size
 
 `renderer.get_text_size(std::string text, ImFont* font):` [<mark style="color:purple;">`c_vector2d`</mark>](../class/c\_vector2d.md)<mark style="color:purple;">``</mark>
