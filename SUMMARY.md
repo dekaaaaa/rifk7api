@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Official Website](https://rifk7.com/index.php)
+* [Rifk7 Website](https://rifk7.com/index.php)
 
 ## Useful information
 
