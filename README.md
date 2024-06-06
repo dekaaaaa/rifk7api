@@ -1,5 +1,5 @@
 ---
-description: Welcome to the Rifk7 lua wiki!
+description: Welcome to the Rifk7 LUA wiki!
 ---
 
 # Welcome
@@ -8,15 +8,16 @@ description: Welcome to the Rifk7 lua wiki!
 
 ## About
 
-rifk7 is a very good cheat for Antiaim and Ragebot, with a team that can provide quick help and a great forum environment
+Rifk7 is a cheat for CS:GO and CS2 which has LUA scripting capabilities.\
+**THIS API IS FOR THE CS:GO CHEAT.**
 
 {% hint style="info" %}
-Lua version: ~~latest ( 5.4.4 )~~ LuaJIT
+Lua version: LuaJIT
 {% endhint %}
 
 ## Getting Started
 
-For information on how to get started with lua scripting, check out the link below.
+For information on how to get started with LUA scripting, check out the link below.
 
 {% content-ref url="useful-information/quick-start.md" %}
 [quick-start.md](useful-information/quick-start.md)
@@ -38,11 +39,15 @@ For information on how to get started with lua scripting, check out the link bel
 {% endtab %}
 {% endtabs %}
 
-
-
 ## Documentation errors
 
-Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and Fearless\_hamster, **if you have any questions please send an error message to **<mark style="color:purple;">**`Robonyan_tame#4147`**</mark>** via discord**
+**OLD MAINTAINERS**
+
+Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and Fearless\_hamster, **if you have any questions please send an error message to `Robonyan_tame#4147`**\*\* via discord\*\*
+
+**NEW MAINTAINER**
+
+deka (dc is de.ka)
 
 ## Credits <a href="#credits" id="credits"></a>
 
@@ -52,7 +57,3 @@ Created this project by Robonyan\_tame, written by Robonyan\_tame and NineY and 
 
 [Fearless\_Hamster](https://rifk7.com/index.php?members/fearless.1917/) - Development of rifk7's wiki
 
-## Rifk7 Translation Project
-
-* ****:flag\_cn: **中国 / Chinese**
-  * ****[**https://r7cn.hvhbbs.com/**](https://r7cn.hvhbbs.com/)****
